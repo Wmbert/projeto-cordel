@@ -1,8 +1,25 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: escrita;
+    src: url(../fontes/Caveat-VariableFont_wght.ttf) format(truetype);
+    font-weight: normal;
+}
 
+@font-face {
+    font-family: nome;
+    src: url(../fontes/AlexBrush-Regular.ttf) format(truetype);
+    font-weight: normal;
+}
 
+:root {
+    --cor1: black;
+    --cor2: white;
 
+    --fontetitulo: 'titulo';
+    --fonteescrita: 'escrita', Arial;
+    --fontenome: 'nome', arial;
+}
 
 * {
     margin: 0px;
@@ -10,16 +27,16 @@
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-color: var(--cor1);
+    color: var(--cor2);
     text-align: center;  
     padding: 50px;
 }
 
 header > h1 {
+    font-family: var(--fontetitulo);
     padding-bottom: 10px;
     font-size: 400%;
-    font-weight: bolder;
 }
 
 header > p {
@@ -27,10 +44,16 @@ header > p {
 }
 
 p > a {
+    font-family: var(--fontenome);
     text-decoration: none;
-    color: white;
+    color: var(--cor2);
 }
 
 p > a:hover {
     text-decoration: underline;
+}
+
+main> p {
+    font-family: var(--fontetitulo);
+    font-size: 50px;
 }
