@@ -27,6 +27,7 @@
     --fontenome: 'nome', arial;
 }
 
+
 body {
     margin: 0px;
 }
@@ -58,6 +59,11 @@ p > a {
 
 p > a:hover {
     text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonteescrita);
+    font-size: 2em;
 }
 
 footer {
