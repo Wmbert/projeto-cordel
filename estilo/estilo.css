@@ -33,50 +33,65 @@
     padding: 0px;
 }
 
-body {
-    margin: 0px;
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
 }
 
 header {
     background-color: var(--cor1);
     color: var(--cor2);
     text-align: center;  
-    padding: 50px;
-    max-width: 98%;
 }
 
 header > h1 {
+    padding-top: 50px;
     font-family: var(--fontetitulo);
-    padding-bottom: 10px;
+    font-variant: small-caps;
     font-size: 4em;
     margin: auto;
 }
 
 header > p {
     font-size: 1.5em;
+    padding-bottom: 50px;
 }
 
-p > a {
+header a, footer a {
     font-family: var(--fontenome);
     text-decoration: none;
     color: var(--cor2);
 }
 
-p > a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 section {
     font-family: var(--fonteescrita);
     font-size: 2.5em;
+    line-height: 2em;
     max-width: 100%;
-    padding: 50px;
-    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;  
 }
 
-section > p {
-    padding: 15px;
-    font-weight: bolder;
+section.normal {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+section.imagem {
+    background-color: var(--corfundo);
+    color: var(--cor2);
+}
+
+section.imagem > p {
+    background-color: var(--corfundo);
+    width: 400px;
+    border-radius: 10px;
+
 }
 
 section#img01 {
@@ -84,36 +99,15 @@ section#img01 {
     background-size: cover;
 }
 
-
-section#img01 > p {
-    background-color: rgba(0, 0, 0, 0.39);
-    color: var(--cor2);
-    max-width: 350px;
-    border-radius: 10px;
-    padding: 15px;
-}
-
 section#img02 {
     background: var(--corfundo)  url(../imagens/background002.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
-section#img02 > p {
-    background-color: var(--corfundo);
-    color: var(--cor2);
-    max-width: 350px;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-
 footer {
     background-color: var(--cor1);
     color: var(--cor2);
     text-align: center;
-}
-
-footer > p {
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
