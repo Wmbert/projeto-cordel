@@ -102,7 +102,7 @@ section.imagem > p {
 }
 
 section#img01 {
-    padding-top: 0px;
+    margin: 0px;
     background: var(--corfundo) url(../imagens/background001.jpg) center center no-repeat fixed;
 }
 
