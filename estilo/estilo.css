@@ -72,7 +72,7 @@ section {
     font-size: 3.5vw;
     line-height: 2em;
     padding-top: 10vh;
-    
+    padding-bottom: 10vh;
     padding-left: 30px;  
 }
 
@@ -102,6 +102,7 @@ section.imagem > p {
 }
 
 section#img01 {
+    padding-top: 0px;
     background: var(--corfundo) url(../imagens/background001.jpg) center center no-repeat fixed;
 }
 
